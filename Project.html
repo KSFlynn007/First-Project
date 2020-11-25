@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+  </head>
+  <style>
+    .nurse-project {
+        box-shadow: rgba(37,39,89,0,0.08) 0px 8px 8px 0px;
+        background-image: linear-gradient(to bottom, #fca652 0%, #ed6663 100%);
+        border-radius: 30px;
+        color:#393b44;
+        width: 70%;
+        padding: 30px;
+        margin: 20px auto;
+        line-height: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;   
+      }
+    body {
+        text-align: center;
+      }
+    h1 {
+      line-height: 50px;
+      }
+    span:hover {
+      font-size: 20px;
+      font-weight: bolder;
+      font-style: italic;
+     }
+    a {
+      text-decoration: none;
+      color:#393b44;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .column {
+      float:left;
+      width: 33.33%;
+      padding:5px;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    img {
+      border-radius: 20px;
+      border-width: medium;
+      border: 2px solid #393b44;
+    }
+    ul {
+      list-style: none;
+      padding: 0px;
+      text-align: center;
+      line-height: 30px;
+    }
+    .letters {
+      text-align:center;
+    }
+    iframe {
+        border-radius: 5px;
+        border: 2px solid #393b44;
+        }
+    button {
+        display: block;
+        margin: 0 auto;
+        color:#393b44;
+        padding: 15px 20px;
+        font-size: 16px;  
+        font-variant: small-caps; 
+        background: transparent;
+        border: 2px solid #393b44;
+        border-radius: 40px;
+        box-shadow: 5px 5px 10px rgba(151, 47, 47, 0.3);  
+        transition: all 150ms ease-in-out;
+    }
+    button:hover {
+        background-color:#393b44;
+        color: #f1f3f8;
+        cursor:pointer;
+    }
+  </style>
+  <body>
+    <div class="nurse-project">
+    <h1>Nurses 💖 Deliveries</h1>
+    <p1>
+      Support your nurses <em>without</em> the drama. (No banging pots here.) <br /><br />
+       Our healthcare workers are running on fumes these days, scavenging what scraps they
+       can from their break rooms & grazing when they have time.
+       <span>
+      <a
+        class="regulations"
+        href="https://www.albertahealthservices.ca/assets/info/ppih/if-ppih-ncov-2019-staff-faq.pdf"
+        target="_blank"
+        title="Novel Coronavirus (COVID-19) Frequently Asked Questions - Staff"
+      >
+      
+        AHS regulations</span>
+      </a>
+      state that external deliveries, including food, can't be made to
+      hospitals, but our program has partnered with Calgary's best to
+      allow for a seamless delivery of goodies of your choosing. 🚑
+      <br /><br />
+      You can feed a tired nurse (and doctor) by providing one of our snack packages!
+
+    </p1>
+    <hr>
+    <h2>Step 1: Choose your Package</h2>
+    <div class="row">
+      <div class="column">
+        <img src="https://cdn.shopify.com/s/files/1/1172/8676/products/ERH_7425_900x.jpg?v=1583931296" 
+            style="width: 200px; height: 150px"
+            alt="Package A">
+  </div>
+  <div class="column">
+    <img src="https://static.wixstatic.com/media/155e41_7eba6c8cc02c49ef98a54e0f35b1bcba~mv2_d_3024_3456_s_4_2.jpg/v1/fill/w_356,h_356,al_c,q_80,usm_0.66_1.00_0.01/67187803_662125610943541_529391652514771.webp"
+        style="width: 200px; height: 150px"
+        alt="Package B">
+  </div>
+  <div class="column">
+      <img src="https://www.renown.org/wp-content/uploads/starbucks-coffee-traveler.jpg"
+         style="width: 200px; height: 150px"
+        alt="Package C">
+      </div>
+    </div>
+    <ul>
+      <li class="letters">
+        <strong>A:</strong>  Graze YYC's "Sandwich Box" - <em>$50</em>
+      </li>
+      <li class="letters">
+        <strong>B:</strong>  Grace YYC's "Sweet Graze" - <em>$30</em>
+      </li>
+      <li class="letters">
+        <strong>C:</strong>  Starbuck's Coffee Traveler - <em>$15</em>
+      </li>
+    </ul>
+    <h2>Step 2: Choose your Calgary Hospital</h2>
+    <p2>
+      Don't know your local hospital? No worries!<br />
+      Choose one from the map below:
+    </p2>
+    <br />
+    <br />
+    <iframe
+      src="https://www.google.com/maps/d/embed?mid=1Fuv8mRw0hdbHZHpc8FdpB-T29yExZaF7"
+      width="500"
+      height="300"
+    ></iframe>
+</br></br></br>
+    <p3> When you're ready, click below to make your selections! </p3>
+</br></br>
+    <button>
+        Support your Healthcare Workers 👩‍⚕️👨‍⚕️
+    </button>
+</br>
+<hr>
+</br>
+<img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/F885/production/_110212636_gettyimages-494602505.jpg" 
+width= 350
+alt="Meerkats waiting"
+/>
+<p> <em>
+  The nurses eagerly await...
+</em></p>
+</div>
+    <script>
+     function support() {
+    let fullName = prompt("What is your full name?");
+    let email = prompt("What is your email address?");
+    let hospital = prompt("What hospital do you want to deliver to? (Hint: check the map!)")
+    let anonymous = prompt("Would you like to have your gift remain anonymous?")
+    .toLowerCase()
+    .trim();
+    alert("Thank you " + fullName +"! 💖");
+
+    let page = document.querySelector(".nurse-project");
+    if (anonymous === "yes") {
+      page.innerHTML = "Your snack package has been requested, and your gift will remain anonymous! We're sending you an email to " + email + " that includes your invoice and your delivery confirmation." 
+    } else {
+      page.innerHTML = "Your snack package has been requested, and we'll include your name in a small card with delivery! We're sending you an email to " + email + " that includes your invoice and your delivery confirmation."
+    }
+     }
+
+      let supportButton = document.querySelector("button");
+      supportButton.addEventListener("click", support);
+    </script>
+  </body>
+</html>
